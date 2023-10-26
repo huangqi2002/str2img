@@ -71,7 +71,7 @@ namespace license_str2image_application
       plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;//车牌尺寸类型
       fond_color_ = ("#FFFFFFFF"); //车牌字体颜色
       plate_bitmap_ = null;//车牌模拟图
-      out_path_ = "D:\\workspace\\str_img\\out_img\\code-img.png";//输出路径
+      out_path_ = "out_img\\code-img.png";//输出路径
     }
     public License_str2image(string str_license, Supported_Plate_Type plateType, string out_path)
     {
@@ -118,60 +118,64 @@ namespace license_str2image_application
       switch (plate_type_)
       {
         case Supported_Plate_Type.LT_BLUE://蓝牌小汽车
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_blue.png");//设置底图
+          plate_bitmap_ = Set_attribute("img\\civil_blue.png");//设置底图
           fond_color_ = ("#FFFFFFFF");//字体颜色
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;//设置尺寸类型
           break;
+
         case Supported_Plate_Type.LT_BLACK://黑牌小汽车
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_black.jpg");
+          plate_bitmap_ = Set_attribute("img\\civil_black.jpg");
           fond_color_ = ("#FFFFFFFF");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
+
         case Supported_Plate_Type.LT_YELLOW://单排黄牌小汽车
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_yellow.png");
+          plate_bitmap_ = Set_attribute("img\\civil_yellow.png");
           fond_color_ = ("#FF000000");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
+
         case Supported_Plate_Type.LT_YELLOW2://双排黄牌小汽车
+
           break;
         case Supported_Plate_Type.LT_POLICE://单排警车小汽车
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_white.jpg");
+          plate_bitmap_ = Set_attribute("img\\civil_white.jpg");
           fond_color_ = ("#FF000000");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
         case Supported_Plate_Type.LT_ARMPOL://单排武警小汽车
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_white.jpg");
+          plate_bitmap_ = Set_attribute("img\\civil_white.jpg");
           fond_color_ = ("#FFFF0000");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
         case Supported_Plate_Type.LT_INDIVI://个性化车牌
           break;
         case Supported_Plate_Type.LT_ARMY://单排军车牌
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_white.jpg");
+          plate_bitmap_ = Set_attribute("img\\civil_white.jpg");
           fond_color_ = ("#FFFF0000");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
         case Supported_Plate_Type.LT_ARMY2://双排军车牌
           break;
         case Supported_Plate_Type.LT_EMBASSY://使馆车牌
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_black.jpg");
+          plate_bitmap_ = Set_attribute("img\\civil_black.jpg");
           fond_color_ = ("#FFFF0000");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
         case Supported_Plate_Type.LT_HONGKONG://香港进出中国大陆车牌
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_black.jpg");
+          plate_bitmap_ = Set_attribute("img\\civil_black.jpg");
           fond_color_ = ("#FFFFFFFF");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
         case Supported_Plate_Type.LT_TRACTOR://农用车牌
           break;
         case Supported_Plate_Type.LT_COACH://教练车牌
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_yellow.png");
+          plate_bitmap_ = Set_attribute("img\\civil_yellow.png");
           fond_color_ = ("#FF000000");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
         case Supported_Plate_Type.LT_MACAO://澳门进出中国大陆车牌
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_black.jpg");
+          plate_bitmap_ = Set_attribute("img\\civil_black.jpg");
           fond_color_ = ("#FFFFFFFF");
           break;
         case Supported_Plate_Type.LT_ARMPOL2://双层武警车牌
@@ -181,28 +185,28 @@ namespace license_str2image_application
         case Supported_Plate_Type.LT_ARMPOL2_ZONGDUI:// 双层武警总队车牌
           break;
         case Supported_Plate_Type.LI_AVIATION://民航
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_green.png");
+          plate_bitmap_ = Set_attribute("img\\civil_green.png");
           fond_color_ = ("#FFFFFFFF");
           break;
         case Supported_Plate_Type.LI_ENERGY://新能源小汽车
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_new_energy.png");
+          plate_bitmap_ = Set_attribute("img\\civil_new_energy.png");
           fond_color_ = ("#FF000000");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
         case Supported_Plate_Type.LI_ENERGY2://大型新能源
           break;
         case Supported_Plate_Type.LI_EMERGENCY://应急车牌
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_white.jpg");
+          plate_bitmap_ = Set_attribute("img\\civil_white.jpg");
           fond_color_ = ("#FF000000");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
         case Supported_Plate_Type.LI_CONSULATE://领事馆
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_black.jpg");
+          plate_bitmap_ = Set_attribute("img\\civil_black.jpg");
           fond_color_ = ("#FFFFFFFF");
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;
           break;
         default:
-          plate_bitmap_ = Set_attribute("D:\\workspace\\str_img\\img\\civil_blue.png");//设置底图
+          plate_bitmap_ = Set_attribute("img\\civil_blue.png");//设置底图
           fond_color_ = ("#FFFFFFFF");//字体颜色
           plate_size_type_ = Supported_Plate_SIZE_Type.NORMAL_SIZE;//设置尺寸类型
           break;
@@ -214,6 +218,24 @@ namespace license_str2image_application
       }
       else{
         plate_bitmap_ = plate_bitmap_.Resize(new SKImageInfo(440, 220), SKFilterQuality.High);//resize
+      }
+    }
+    //绘制车牌分隔圆点
+    protected void Paint_char_dot(float dot_pos_x, float dot_pos_y, float dot_radius, string? fond_color)
+    {
+      if (fond_color == null) return;
+      //创建SKCanvas对象
+      using (SKCanvas canvas = new SKCanvas(plate_bitmap_))
+      {
+        using (SKPaint paint = new SKPaint())//颜色设置
+        {
+          paint.Color = new SKColor(uint.Parse(fond_color.Substring(1, fond_color.Length - 1)
+                                      , System.Globalization.NumberStyles.AllowHexSpecifier));
+          canvas.DrawCircle(dot_pos_x, dot_pos_y, dot_radius, paint);
+
+          // canvas.DrawBitmap(resourceBitmap, source_char_pos, dest_char_pos, paint);
+          // Save_bitmap(plate_bitmap_);
+        }
       }
     }
     //根据字符找出在图中的位置
@@ -242,7 +264,7 @@ namespace license_str2image_application
     //绘制车牌号单个字符
     protected void Paint_char_image(SKRect source_char_pos, SKRect dest_char_pos, string? fond_color)
     {
-      using (var input = File.OpenRead("D:\\workspace\\str_img\\img\\civil_db_28x50.jpg"))//读取图片文件
+      using (var input = File.OpenRead("img\\civil_db_28x50.jpg"))//读取图片文件
       {
         if (input == null) return;
         using (var inputStream = new SKManagedStream(input))//新建一个输入流
@@ -270,9 +292,7 @@ namespace license_str2image_application
                 color_a/255, 0, 0, 0, 0
               });
               canvas.DrawBitmap(resourceBitmap, source_char_pos, dest_char_pos, paint);
-              Save_bitmap(plate_bitmap_);
             }
-              
           }
         }
       }
@@ -281,6 +301,8 @@ namespace license_str2image_application
     protected void Paint_license_image()
     {
       if(license_str_ == null || plate_bitmap_ == null) return;
+      if (fond_color_ == null) { fond_color_ = "#FFFFFFFF"; }
+      string dot_color = fond_color_;//车牌分隔点颜色
       //对武警
       if (license_str_[0] == 'W' && license_str_[1] == 'J')
       {
@@ -292,40 +314,44 @@ namespace license_str2image_application
       int standH = 140;
       int tab_start = 38;//七字符
       int license_width = 57;
-      int espase_width = 34;
-      int word_width = 45;
-      int word_height = 90;
+      int espase_width = 22;
+      float dot_radius = 5;
+      float word_width = 45;
+      float word_height = 90;
       if (plate_size_type_ == Supported_Plate_SIZE_Type.NORMAL_SIZE)//单层车牌
       {
         if (license_str_.Length == 8)//八字符
         {
           license_width = 47;
-          espase_width = 44;
+          espase_width = 32;
           word_width = 35;
         }
       }
-      int[] wtab = new int[8] {
+      float[] wtab = new float[8] {
           tab_start,
           (tab_start+license_width),
-          (tab_start+license_width+word_width+espase_width),
-          (tab_start+license_width+word_width+espase_width+license_width),
-          (tab_start+license_width+word_width+espase_width+license_width*2),
-          (tab_start+license_width+word_width+espase_width+license_width*3),
-          (tab_start+license_width+word_width+espase_width+license_width*4),
-          (tab_start+license_width+word_width+espase_width+license_width*5)};
+          (tab_start+license_width*2+espase_width),
+          (tab_start+license_width*2+espase_width+license_width),
+          (tab_start+license_width*2+espase_width+license_width*2),
+          (tab_start+license_width*2+espase_width+license_width*3),
+          (tab_start+license_width*2+espase_width+license_width*4),
+          (tab_start+license_width*2+espase_width+license_width*5)};
+      //计算车牌分隔点在模拟车牌上的位置
+      float dot_pos_x = (wtab[1] + wtab[2]) / 2;
+      float dot_pos_y = standH / 2;
       switch (plate_type_)
       {
         case Supported_Plate_Type.LT_POLICE://单排警车小汽车
-          wtab[1] = tab_start + word_width + espase_width;
+          wtab[1] += espase_width;
           break;
         case Supported_Plate_Type.LT_INDIVI://个性化车牌
           break;
         case Supported_Plate_Type.LT_ARMY2://双排军车牌
           break;
         case Supported_Plate_Type.LT_EMBASSY://使馆车牌
-          wtab[1] = tab_start + license_width;
-          wtab[2] = tab_start + license_width * 2;
-          wtab[3] = tab_start + license_width * 3;
+          wtab[1] += espase_width;
+          wtab[2] += espase_width;
+          wtab[3] += espase_width;
           break;
         case Supported_Plate_Type.LT_TRACTOR://农用车牌
           break;
@@ -342,16 +368,18 @@ namespace license_str2image_application
         case Supported_Plate_Type.LI_ENERGY2://大型新能源
           break;
         case Supported_Plate_Type.LI_EMERGENCY://应急车牌
-          wtab[1] = tab_start + word_width + espase_width;
+          wtab[1] += espase_width;
           break;
         case Supported_Plate_Type.LI_CONSULATE://领事馆
-          wtab[1] = tab_start + license_width;
-          wtab[2] = tab_start + license_width * 2;
-          wtab[3] = tab_start + license_width * 3;
+          wtab[1] += espase_width;
+          wtab[2] += espase_width;
+          wtab[3] += espase_width;
           break;
         default:
           break;
       }
+      //绘制车牌分隔圆点
+      Paint_char_dot(dot_pos_x, dot_pos_y, dot_radius, dot_color);
       int temp_index = 0;
       foreach (char license_c in license_str_) {
         //得到字符在字符图中位置
@@ -363,7 +391,6 @@ namespace license_str2image_application
         float dest_char_pos_bottom = standH / 2 + word_height / 2;
         SKRect dest_char_pos = new SKRect(dest_char_pos_left, dest_char_pos_top, dest_char_pos_right, dest_char_pos_bottom);
         //根据位置绘制车牌字符
-        if(fond_color_ == null) { fond_color_ = "#FFFFFFFF"; }
         string paint_color = fond_color_;
         switch (plate_type_)
         {
