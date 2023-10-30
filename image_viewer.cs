@@ -613,7 +613,8 @@ namespace license_str2image_application
       Paint_bk_image();//设置车牌属性
       Paint_license_image();//设置车牌字符图
       string plate_type_str = Enum.GetName(typeof(Supported_Plate_Type), plate_type_) + ".png";
-      string out_path = Path.Combine(Out_path_, plate_type_str);
+      if (out_path_ == null) return;
+      string out_path = Path.Combine(out_path_, plate_type_str);
       Save_bitmap(plate_bitmap_, out_path);//保存车牌模拟图
     }
 

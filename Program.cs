@@ -8,10 +8,10 @@ public class Shape
   public static void Main()
   {
     //蓝牌小汽车 LT_BLUE
-    string str_license = "湘A12345";
-    Supported_Plate_Type plateType = Supported_Plate_Type.LT_BLUE;
-    string out_path = Path.Combine(Environment.CurrentDirectory, "out_img");
-    string in_path = Path.Combine(Environment.CurrentDirectory, "img");//图片存储文件夹
+    string str_license = "湘A12345";//车牌号
+    Supported_Plate_Type plateType = Supported_Plate_Type.LT_BLUE;//车牌种类
+    string out_path = Path.Combine(Environment.CurrentDirectory, "out_img");//输出图片存储文件夹
+    string in_path = Path.Combine(Environment.CurrentDirectory, "img");//字符图存储文件夹
     License_str2image license_str2image = new License_str2image(str_license, plateType, out_path, in_path);
     license_str2image.paint_plate_image();
 
